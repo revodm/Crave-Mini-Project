@@ -1,0 +1,33 @@
+.col-img {
+    background-image: url(./images/kare.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.news__crave {
+    font-family: 'PT Serif', sans-serif;
+}
+.link {
+    text-decoration: none;
+    color: lightgray;
+    font-style: italic;
+}
+
+/* Blogs */
+
+.card-text {
+    font-style: italic;
+    font-family: 'PT Serif', sans-serif;
+}
+
+/* footer */
+h5 {
+    font-family: 'PT Serif',sans-serif;
+    font-weight: 700;
+}
+.crave {
+    font-family: 'Sora';
+    letter-spacing: 1px;
+    font-size: 10px;
+}
