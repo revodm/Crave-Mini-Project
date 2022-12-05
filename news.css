@@ -13,7 +13,9 @@
     color: lightgray;
     font-style: italic;
 }
-
+.link:hover {
+    color: black;
+}
 /* Blogs */
 
 .card-text {

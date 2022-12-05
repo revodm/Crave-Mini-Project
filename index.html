@@ -10,20 +10,22 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     
-    <link href="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    <link href="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=PT+Serif:ital,wght@0,700;1,400&family=Sora:wght@400;700&display=swap" rel="stylesheet">
+
   </head>
   <body>
-
-
+    
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg py-2 sticky-top navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img class="logo" src="./images/logo.svg" alt="logo">
+          <img class="logo" src="./images/new_logo.png" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -32,7 +34,7 @@
           <ul class="navbar-nav ms-auto">
             
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#features">Features</a>
@@ -49,7 +51,7 @@
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-danger" type="submit">
+            <button class="btn btn-secondary" type="submit">
               Search
             </button>
           </form>
@@ -57,23 +59,31 @@
       </div>
     </nav> 
     <!-- Navigation Bar Ends Here -->
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
 
     <!-- Hero -->
-    <div class="hero vh-100 d-flex align-items-center" id="home">
+    <div class="hero vh-100 d-flex align-items-center" 
+            id="home">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 mx-auto text-center">
             <h1 
-              class="display-4 text-white">Crave Up, Live With No Hunger
+              class="display-1 text-white">Crave Up, Live With No Hunger
             </h1>
-            <p class="text-white"><i>
+            <p class="text-white">
                Get the hottest, most delicious cravings around the globe!
-            </i></p>
-            <a href="#" class="btn btn-danger">Get Started</a>
+            </p>
+            <a href="http://127.0.0.1:5500/redirect.html" target="_blank" class="btn btn-danger w-50 py-2">Get Started</a>
           </div>
         </div>
       </div>
     </div>
+     
     <!-- Hero Ends Here -->
 
     <!-- Features -->
@@ -88,15 +98,15 @@
           </div>
         </div>
       </div>
-      <div class="container d-flex flex-row px-5 m-3">
+      <div class="container-lg d-flex flex-row px-5 m-3">
         <div class="row">
           <div class="col-lg-4">
             <div class="card-effect" style="width: 18rem; height: 28rem;">
               <img src="./images/spain.png" class="card-img-top" alt="Txuleton Steak">
               <div class="card-body">
                 <h5 class="card-title">Casa Julian, San Sebastian, Spain</h5>
-                <p class="card-text">Barbecue might not be the first thing that springs to mind when you think of San Sebastian. But, beyond the cramped chaos of the thriving pintxos bars, the small Basque city serves up some of the...</p>
-                <a href="#" class="btn btn-danger">Read More</a>
+                <p class="card-text">Barbecue might not be the first thing that springs to mind when you think of San Sebastian. But, beyond the cramped chaos of the thriving pintxos bars,...</p>
+                <a href="https://twistedfood.co.uk/articles/the-9-best-barbecue-joints-on-the-planet?fbclid=IwAR0HbNVYq7g-5EzZgCOEmvtmG31KPNh2R2b6l596cmNTOIZQTmrCnIeDW1U" target="_blank" class="btn btn-danger">Read More</a>
               </div>
             </div>
           </div>
@@ -107,8 +117,8 @@
               <img src="./images/ramen.jpeg" class="card-img-top" alt="Tsukemen">
               <div class="card-body">
                 <h5 class="card-title">Japan</h5>
-                <p class="card-text">The dish involves serving cold noodles alongside a bowl of hot soup. You would dip the noodles into the soup and enjoy the toppings served atop or...</p>
-                <a href="#" class="btn btn-danger">Read More</a>
+                <p class="card-text">The dish involves serving cold noodles alongside a bowl of hot soup. You would dip the noodles into the soup and enjoy the toppings served atop or Lorem, ipsum.lorem...</p>
+                <a href="https://www.justonecookbook.com/tsukemen-dipping-noodles/#:~:text=Known%20as%20Tsukemen%20(%E3%81%A4%E3%81%91%E9%BA%BA)%2C,the%20side%20of%20the%20noodles." target="_blank" class="btn btn-danger">Read More</a>
               </div>
             </div>
           </div>
@@ -120,7 +130,7 @@
               <div class="card-body">
                 <h5 class="card-title">Philippines</h5>
                 <p class="card-text">It's the Filipino dish everybody knows — the mighty adobo. It is made by stewing meat (usually chicken, pork, or a combination of both) in soy sauce and vinegar, adding...</p>
-                <a href="#" class="btn btn-danger">Read More</a>
+                <a href="https://theculturetrip.com/asia/philippines/articles/the-21-best-dishes-in-the-philippines/" target="_blank" class="btn btn-danger">Read More</a>
               </div>
             </div>
           </div>
@@ -132,7 +142,7 @@
               <div class="card-body">
                 <h5 class="card-title">New Orleans</h5>
                 <p class="card-text">At Broussard's in New Orleans, you'll find French elegance without pretense, all highlighted with Creole flavor. Chef Neal Swidler brines his turkey for eight hours, then rubs it with a...</p>
-                <a href="#" class="btn btn-danger">Read More</a>
+                <a href="https://neworleanscitybusiness.com/blog/2016/09/12/new-chef-elevates-consistency-at-broussards/" target="_blank" class="btn btn-danger">Read More</a>
               </div>
             </div>
           </div>
@@ -142,8 +152,8 @@
     <!-- Feature Ends -->
 
     <!-- News -->
-    <section class="row py-0 bg-light w-100" id="news">
-      <div class="col-lg-6 col-img "></div>
+    <section class="row px-5 py-1.5 bg-light w-100" id="news">
+      <div class="col-lg-6 col-img"></div>
       <div class="col-lg-6 py-5">
         <div class="container">
           <div class="row">
@@ -218,7 +228,7 @@
               </div>
               <div class="col-md-4">
                 <label for="phoneNumber" class="form-label">Phone Number</label>
-                <input type="text" class="form-control" id="phoneNumber" placeholder="+639 033454901">
+                <input type="text" class="form-control" id="phoneNumber" placeholder="+639">
               </div>
               <div class="col-md-12">
                 <label for="comments" class="form-label">Comments/Questions</label> 
@@ -265,5 +275,28 @@
     <!-- Footer Ends -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+     <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "101555939472945");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
   </body>
 </html>
