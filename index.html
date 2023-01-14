@@ -40,11 +40,12 @@
     />
   </head>
   <body>
-    <!-- Messenger Chat plugin Code -->
+<!-- Messenger Chat plugin Code -->
     <div id="fb-root"></div>
 
     <!-- Your Chat plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg py-2 sticky-top navbar-light bg-light">
@@ -321,52 +322,7 @@
           </a>
         </div>
       </div>
-
  
-
-      <!-- <div
-        class="container d-flex flex-row justify-content-between flex-row px-5 col-lg-6 col-sm-6"
-      >
-        <div class="card" style="width: 18rem">
-          <a
-            href="https://www.jjwhotels.com/pierre-gagnaire-interview-the-number-one-chef-in-the-world"
-            target="_blank"
-            ><img
-              src="./images/Pierre-Gagnaire.jpg"
-              class="card-img-top"
-              alt="Pierre Gagnaire"
-          /></a>
-          <div class="card-body">
-            <p class="card-text">
-              “The day I will say to myself that I am at the top, I will stop
-              cooking. You need to carry on aiming for the best, that's your
-              energy. For you, for the young chefs who are working with you and
-              for the clients. The future is today, and my ambitions are still
-              the same ones as when I started: To last...”
-            </p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <a
-            href="https://myfoodbeginnings.wordpress.com/2016/05/26/dont-underestimate-your-filipino-heritage-an-interview-with-a-chic-chef-in-the-sky/"
-            target="_blank"
-            ><img
-              src="./images/noele.jpg"
-              class="card-img-top"
-              alt="Nouel Omamalin"
-          /></a>
-          <div class="card-body">
-            <p class="card-text">
-              "If it's all about creative desserts and food, your Nifty Chef is
-              there".“Don't Underestimate your Filipino Heritage.”Nifty Chef LLC
-              cannot only assist you with menu development. Along with partners
-              in the region, support in branding, interior design, kitchen
-              layout and manpower selection is also a service the company
-              provides.
-            </p>
-          </div>
-        </div>
-      </div> -->
     </section>
     <!-- Blogs Ends -->
 
@@ -491,29 +447,31 @@
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
   >
-
-
-    var chatbox = document.getElementById("fb-customer-chat");
-    chatbox.setAttribute("page_id", "101555939472945");
-    chatbox.setAttribute("attribution", "biz_inbox");
-
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: "v15.0",
-      });
-    };
-
-    (function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    })(document, "script", "facebook-jssdk");
   </script>
+  <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "101555939472945");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v15.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.min.js"></script>
 </html>
