@@ -1,38 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Crave</title>
 
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="news.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    
-    <link href="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="news.css" />
+    <link rel="stylesheet" href="chat.css" />
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=PT+Serif:ital,wght@0,700;1,400&family=Sora:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
 
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=PT+Serif:ital,wght@0,700;1,400&family=Sora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    
+    <!-- Messenger Chat plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg py-2 sticky-top navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img class="logo" src="./images/new_logo.png" alt="logo">
+          <img class="logo" src="./images/new_logo.png" alt="logo" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
-            
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
@@ -49,43 +81,31 @@
               <a class="nav-link" href="#contact">Contact Us</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-secondary" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
-    </nav> 
+    </nav>
     <!-- Navigation Bar Ends Here -->
-    <!-- Messenger Chat plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
 
     <!-- Hero -->
-    <div class="hero vh-100 d-flex align-items-center" 
-            id="home">
+    <div class="hero vh-100 d-flex align-items-center" id="home">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 mx-auto text-center">
-            <h1 
-              class="display-1 text-white">Crave Up, Live With No Hunger
-            </h1>
+            <h1 class="display-1 text-light">Crave Up, Live With No Hunger</h1>
             <p class="text-white">
-               Get the hottest, most delicious cravings around the globe!
+              Get the hottest, most delicious cravings around the globe!
             </p>
-            <a href="http://127.0.0.1:5500/redirect.html" target="_blank" class="btn btn-danger w-50 py-2">Get Started</a>
+            <a href="#features" class="btn">Get Started
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
           </div>
         </div>
       </div>
     </div>
-     
     <!-- Hero Ends Here -->
-
     <!-- Features -->
     <section id="features">
       <div class="container">
@@ -93,7 +113,11 @@
           <div class="col-md-8 mx-auto text-center">
             <h6 class="text-danger">FEATURES</h6>
             <h1>Today's Crave</h1>
-            <p class="feat mb-1">Lorem ipsum dolor sit amet consectetur adipisicing  elit. Voluptates aspernatur dolorum ex quis minus nesciunt voluptatem debitis recusandae, porro alias aliquam eaque, veniam a, dolore commodi saepe laudantium incidunt quaerat.
+            <p class="feat mb-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates aspernatur dolorum ex quis minus nesciunt voluptatem
+              debitis recusandae, porro alias aliquam eaque, veniam a, dolore
+              commodi saepe laudantium incidunt quaerat.
             </p>
           </div>
         </div>
@@ -101,48 +125,97 @@
       <div class="container-lg d-flex flex-row px-5 m-3">
         <div class="row">
           <div class="col-lg-4">
-            <div class="card-effect" style="width: 18rem; height: 28rem;">
-              <img src="./images/spain.png" class="card-img-top" alt="Txuleton Steak">
+            <div class="card-effect" style="width: 18rem; height: 28rem">
+              <img
+                src="./images/spain.png"
+                class="card-img-top"
+                alt="Txuleton Steak"
+              />
               <div class="card-body">
                 <h5 class="card-title">Casa Julian, San Sebastian, Spain</h5>
-                <p class="card-text">Barbecue might not be the first thing that springs to mind when you think of San Sebastian. But, beyond the cramped chaos of the thriving pintxos bars,...</p>
-                <a href="https://twistedfood.co.uk/articles/the-9-best-barbecue-joints-on-the-planet?fbclid=IwAR0HbNVYq7g-5EzZgCOEmvtmG31KPNh2R2b6l596cmNTOIZQTmrCnIeDW1U" target="_blank" class="btn btn-danger">Read More</a>
+                <p class="card-text">
+                  Barbecue might not be the first thing that springs to mind
+                  when you think of San Sebastian. But, beyond the cramped chaos
+                  of the thriving pintxos bars,...
+                </p>
+                <a
+                  href="https://twistedfood.co.uk/articles/the-9-best-barbecue-joints-on-the-planet?fbclid=IwAR0HbNVYq7g-5EzZgCOEmvtmG31KPNh2R2b6l596cmNTOIZQTmrCnIeDW1U"
+                  target="_blank"
+                  class="btn btn-danger"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4">
-            <div class="card-effect" style="width: 18rem; height: 28rem;">
-              <img src="./images/ramen.jpeg" class="card-img-top" alt="Tsukemen">
+            <div class="card-effect" style="width: 18rem; height: 28rem">
+              <img
+                src="./images/ramen.jpeg"
+                class="card-img-top"
+                alt="Tsukemen"
+              />
               <div class="card-body">
                 <h5 class="card-title">Japan</h5>
-                <p class="card-text">The dish involves serving cold noodles alongside a bowl of hot soup. You would dip the noodles into the soup and enjoy the toppings served atop or Lorem, ipsum.lorem...</p>
-                <a href="https://www.justonecookbook.com/tsukemen-dipping-noodles/#:~:text=Known%20as%20Tsukemen%20(%E3%81%A4%E3%81%91%E9%BA%BA)%2C,the%20side%20of%20the%20noodles." target="_blank" class="btn btn-danger">Read More</a>
+                <p class="card-text">
+                  The dish involves serving cold noodles alongside a bowl of hot
+                  soup. You would dip the noodles into the soup and enjoy the
+                  toppings served atop or Lorem, ipsum.lorem...
+                </p>
+                <a
+                  href="https://www.justonecookbook.com/tsukemen-dipping-noodles/#:~:text=Known%20as%20Tsukemen%20(%E3%81%A4%E3%81%91%E9%BA%BA)%2C,the%20side%20of%20the%20noodles."
+                  target="_blank"
+                  class="btn btn-danger"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4">
-            <div class="card-effect" style="width: 18rem; height: 28rem;">
-              <img src="./images/adobo.jpeg" class="card-img-top" alt="Adobo">
+            <div class="card-effect" style="width: 18rem; height: 28rem">
+              <img src="./images/adobo.jpeg" class="card-img-top" alt="Adobo" />
               <div class="card-body">
                 <h5 class="card-title">Philippines</h5>
-                <p class="card-text">It's the Filipino dish everybody knows — the mighty adobo. It is made by stewing meat (usually chicken, pork, or a combination of both) in soy sauce and vinegar, adding...</p>
-                <a href="https://theculturetrip.com/asia/philippines/articles/the-21-best-dishes-in-the-philippines/" target="_blank" class="btn btn-danger">Read More</a>
+                <p class="card-text">
+                  It's the Filipino dish everybody knows — the mighty adobo. It
+                  is made by stewing meat (usually chicken, pork, or a
+                  combination of both) in soy sauce and vinegar, adding...
+                </p>
+                <a
+                  href="https://theculturetrip.com/asia/philippines/articles/the-21-best-dishes-in-the-philippines/"
+                  target="_blank"
+                  class="btn btn-danger"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4">
-            <div class="card-effect" style="width: 18rem; height: 28rem;">
-              <img src="./images/creole.jpeg" class="card-img-top" alt="Creole Smoked Turkey">
+            <div class="card-effect" style="width: 18rem; height: 28rem">
+              <img
+                src="./images/creole.jpeg"
+                class="card-img-top"
+                alt="Creole Smoked Turkey"
+              />
               <div class="card-body">
                 <h5 class="card-title">New Orleans</h5>
-                <p class="card-text">At Broussard's in New Orleans, you'll find French elegance without pretense, all highlighted with Creole flavor. Chef Neal Swidler brines his turkey for eight hours, then rubs it with a...</p>
-                <a href="https://neworleanscitybusiness.com/blog/2016/09/12/new-chef-elevates-consistency-at-broussards/" target="_blank" class="btn btn-danger">Read More</a>
+                <p class="card-text">
+                  At Broussard's in New Orleans, you'll find French elegance
+                  without pretense, all highlighted with Creole flavor. Chef
+                  Neal Swidler brines his turkey for eight hours, then rubs it
+                  with a...
+                </p>
+                <a
+                  href="https://neworleanscitybusiness.com/blog/2016/09/12/new-chef-elevates-consistency-at-broussards/"
+                  target="_blank"
+                  class="btn btn-danger"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
@@ -157,16 +230,43 @@
       <div class="col-lg-6 py-5">
         <div class="container">
           <div class="row">
-            <div class="col-md-10 offset-md-1 ">
-              <h6 class="text-danger">Crave Daily: Filipino Ultimate Craving</h6>
+            <div class="col-md-10 offset-md-1">
+              <h6 class="text-danger">
+                Crave Daily: Filipino Ultimate Craving
+              </h6>
               <h1>The History of Kare-kare, According to the Kapampangans</h1>
-              <p class="news__crave"><i>Kare-kare's storied history as a Filipino food goes back hundreds of years, with at least three ethnic groups claiming they invented it. A very close inspection of its name led us to some fascinating discoveries: that kare-kare was a Kapampangan term that meant poor imitation of their version of kari (curry), that its name was the basis of the word karinderya, and that kari meant sauce in other Asian languages.</i></p>
+              <p class="news__crave text-justify">
+                <i
+                  >Kare-kare's storied history as a Filipino food goes back
+                  hundreds of years, with at least three ethnic groups claiming
+                  they invented it. A very close inspection of its name led us
+                  to some fascinating discoveries: that kare-kare was a
+                  Kapampangan term that meant poor imitation of their version of
+                  kari (curry), that its name was the basis of the word
+                  karinderya, and that kari meant sauce in other Asian
+                  languages.</i
+                >
+              </p>
 
-              <p class="news__crave py-2"><i>
-                Kare-kare has been with the Filipinos for hundreds of years. The kare-kare of today is ox-tail and tripe immersed in an achiote-tinted, peanut-flavored gravy, served with blanched vegetables on a separate platter, and shrimp paste served on the side. Its hearty reputation has led it to become the star of town fiestas, family potlucks, and Mama Sita commercial ads. Kare-kare evokes culinary elegance, tradition, and home. But what is the story behind the dish?
-              </i></p>
+              <p class="news__crave py-2 text-justify">
+                <i>
+                  Kare-kare has been with the Filipinos for hundreds of years.
+                  The kare-kare of today is ox-tail and tripe immersed in an
+                  achiote-tinted, peanut-flavored gravy, served with blanched
+                  vegetables on a separate platter, and shrimp paste served on
+                  the side. Its hearty reputation has led it to become the star
+                  of town fiestas, family potlucks, and Mama Sita commercial
+                  ads. Kare-kare evokes culinary elegance, tradition, and home.
+                  But what is the story behind the dish?
+                </i>
+              </p>
 
-              <a href="https://www.esquiremag.ph/long-reads/features/the-fascinating-history-of-kare-kare-a2386-20190802-lfrm2" target="_blank" class="link mx-0">Continue Reading</a>
+              <a
+                href="https://www.esquiremag.ph/long-reads/features/the-fascinating-history-of-kare-kare-a2386-20190802-lfrm2"
+                target="_blank"
+                class="link mx-0"
+                >Continue Reading</a
+              >
             </div>
           </div>
         </div>
@@ -181,28 +281,94 @@
           <div class="col-md-8 mx-auto text-center">
             <h6 class="text-danger">ON THE SPOT</h6>
             <h1>What The Professional Says?</h1>
-            <p class="feat mb-1">Lorem ipsum dolor sit amet consectetur adipisicing  elit. Voluptates aspernatur dolorum ex quis minus nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iste a nulla hic corrupti unde facilis perspiciatis blanditiis, aspernatur voluptatum fuga adipisci obcaecati commodi assumenda consectetur? Nisi officia ab ipsam!
+            <p class="feat mb-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates aspernatur dolorum ex quis minus nesciunt. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Maxime iste a nulla
+              hic corrupti unde facilis perspiciatis blanditiis, aspernatur
+              voluptatum fuga adipisci obcaecati commodi assumenda consectetur?
+              Nisi officia ab ipsam!
             </p>
           </div>
         </div>
       </div>
-      <div class="container d-flex flex-row justify-content-between flex-row px-5 col-lg-6 col-sm-6">
-        <div class="card" style="width: 18rem;">
-          <a href="https://www.jjwhotels.com/pierre-gagnaire-interview-the-number-one-chef-in-the-world" target="_blank"><img src="./images/Pierre-Gagnaire.jpg" class="card-img-top" alt="Pierre Gagnaire"></a>
-          <div class="card-body">
-            <p class="card-text">“The day I will say to myself that I am at the top, I will stop cooking. You need to carry on aiming for the best, that's your energy. For you, for the young chefs who are working with you and for the clients. The future is today, and my ambitions are still the same ones as when I started: To last...”</p>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <a href="https://myfoodbeginnings.wordpress.com/2016/05/26/dont-underestimate-your-filipino-heritage-an-interview-with-a-chic-chef-in-the-sky/" target="_blank"><img src="./images/noele.jpg" class="card-img-top" alt="Nouel Omamalin"></a>
-          <div class="card-body">
-            <p class="card-text">"If it's all about creative desserts and food, your Nifty Chef is there".“Don't Underestimate your Filipino Heritage.”Nifty Chef LLC cannot only assist you with menu development. Along with partners in the region, support in branding, interior design, kitchen layout and manpower selection is also a service the company provides.</p>
-          </div>
+
+      <div class="container-blog">
+        <div class="image-blog">
+          <a href="./images/img-1.jpg" class="img-1">
+            <p>Pierre Gagnaire</p>
+          </a>
+          <a href="./images/img-2.jpg" class="img-2">
+            <p>Anne-Sophie Pic</p>
+          </a>
+          <a href="./images/img-3.jpg" class="img-3">
+            <p>Nouel Omamalin</p>
+          </a>
+          <a href="./images/img-4.jpg" class="img-4">
+            <p>Alan Ducasse</p>
+          </a>
+          <a href="./images/img-5.jpg" class="img-5">
+            <p>Martin Berasategui</p>
+          </a>
+          <a href="./images/img-6.jpg" class="img-6">
+            <p>Gordon Ramsay</p>
+          </a>
+          <a href="./images/img-7.jpg" class="img-7">
+            <p>Thomas Keller</p>
+          </a>
+          <a href="./images/img-8.jpg" class="img-8">
+            <p>Yannick Alleno</p>
+          </a>
         </div>
       </div>
+
+ 
+
+      <!-- <div
+        class="container d-flex flex-row justify-content-between flex-row px-5 col-lg-6 col-sm-6"
+      >
+        <div class="card" style="width: 18rem">
+          <a
+            href="https://www.jjwhotels.com/pierre-gagnaire-interview-the-number-one-chef-in-the-world"
+            target="_blank"
+            ><img
+              src="./images/Pierre-Gagnaire.jpg"
+              class="card-img-top"
+              alt="Pierre Gagnaire"
+          /></a>
+          <div class="card-body">
+            <p class="card-text">
+              “The day I will say to myself that I am at the top, I will stop
+              cooking. You need to carry on aiming for the best, that's your
+              energy. For you, for the young chefs who are working with you and
+              for the clients. The future is today, and my ambitions are still
+              the same ones as when I started: To last...”
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <a
+            href="https://myfoodbeginnings.wordpress.com/2016/05/26/dont-underestimate-your-filipino-heritage-an-interview-with-a-chic-chef-in-the-sky/"
+            target="_blank"
+            ><img
+              src="./images/noele.jpg"
+              class="card-img-top"
+              alt="Nouel Omamalin"
+          /></a>
+          <div class="card-body">
+            <p class="card-text">
+              "If it's all about creative desserts and food, your Nifty Chef is
+              there".“Don't Underestimate your Filipino Heritage.”Nifty Chef LLC
+              cannot only assist you with menu development. Along with partners
+              in the region, support in branding, interior design, kitchen
+              layout and manpower selection is also a service the company
+              provides.
+            </p>
+          </div>
+        </div>
+      </div> -->
     </section>
     <!-- Blogs Ends -->
-
 
     <!-- Contact -->
     <section id="contact">
@@ -211,28 +377,51 @@
           <div class="col-md-8 text-start">
             <h6 class="text-danger">CONTACT US</h6>
             <h1>Leave A Message</h1>
-            <p class="mb-1">For daily craves and questions please contact us. Have a great day!
+            <p class="mb-1">
+              For daily craves and questions please contact us.
             </p>
             <form class="row g-3 pt-4">
               <div class="col-md-6">
                 <label for="firstName" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="firstName" required>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  required
+                />
               </div>
               <div class="col-md-6">
                 <label for="lastName" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="lastName" required>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  required
+                />
               </div>
               <div class="col-md-8">
                 <label for="email" class="form-label">E-mail Address</label>
-                <input type="email" class="form-control" id="email" required>
+                <input type="email" class="form-control" id="email" required />
               </div>
               <div class="col-md-4">
                 <label for="phoneNumber" class="form-label">Phone Number</label>
-                <input type="text" class="form-control" id="phoneNumber" placeholder="+639">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phoneNumber"
+                  placeholder="+639"
+                />
               </div>
               <div class="col-md-12">
-                <label for="comments" class="form-label">Comments/Questions</label> 
-                <textarea class="form-control" id="comments" rows="3" required></textarea> 
+                <label for="comments" class="form-label"
+                  >Comments/Questions</label
+                >
+                <textarea
+                  class="form-control"
+                  id="comments"
+                  rows="3"
+                  required
+                ></textarea>
               </div>
               <div class="col-md-12">
                 <button type="submit" class="btn btn-danger">Submit</button>
@@ -244,59 +433,87 @@
     </section>
     <!-- Contact Ends -->
 
-
     <!-- Footer -->
-    <footer class="bg-secondary foot text-white pt-2 pb-0">
-      <div class="container text-center text-md-left">
-        <div class="row text-center text-md-left">
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-black">CRAVE</h5>
-            <p class="crave">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nulla qui molestiae recusandae.</p>
-          </div>
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-black">Developed By:</h5>
-            <p class="crave">Doreen "Rev" M. Rotante<br>
-            Web Development-Student<br>
-          Kodego Bootcamp</p>
-          </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-black">Credits
-            </h5>
-            <p class="crave">
-              Visual Studio Code<br>
-              Google Images<br>
-              Pinterest Images<br>
-              Page Link Owners
+
+     <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>CRA<span>VE</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">About</a>
+                |
+                <a href="#">Contact</a>
+                |
+                <a href="#">Blog</a>
             </p>
+
+            <p class="footer-company-name">Copyright © 2021 <strong>RevoTech Entertainment</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+          <div>
+            <i class="bx bxs-map"></i>
+            <p><span>Manila</span> Philippines</p>
+          </div>
+          <div>
+            <i class="bx bxs-phone"></i>
+            <p>+8801345442</p>
+          </div>
+          <div>
+            <i class="bx bxs-envelope"></i>
+            <p><a href="#">crave@revotechentinc.com</a></p>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the Company</span>
+            <strong>RevoTech Entertainment Inc.</strong> is an incorporated
+            company that offers entertainment news and blogs in today's food
+            trends including the new rising Chefs around the globe.
+          </p>
+          <div class="footer-icons">
+            <a href="https://www.facebook.com/profile.php?id=100088388082081" target=""><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
           </div>
         </div>
       </div>
     </footer>
-    <!-- Footer Ends -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-     <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "101555939472945");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v15.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+ <!-- footer ends -->
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  >
+
+
+    https: var chatbox = document.getElementById("fb-customer-chat");
+    chatbox.setAttribute("page_id", "101555939472945");
+    chatbox.setAttribute("attribution", "biz_inbox");
+
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: "v15.0",
+      });
+    };
+
+    (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.min.js"></script>
 </html>
